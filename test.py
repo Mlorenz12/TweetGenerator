@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np 
 import random
 import json
+import logging
 import torch
 from random import shuffle, randint
 #import tensorflow as tf
@@ -9,7 +10,7 @@ from random import shuffle, randint
 from torch import nn, optim
 #from collections import Counter#wozu?
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
+logging.basicConfig(filename='unixmen.log', level=logging.DEBUG)
 print('imports fertig')
 
 '''
