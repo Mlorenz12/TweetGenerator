@@ -11,6 +11,10 @@ from torch import nn, optim
 #from collections import Counter#wozu?
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 logging.basicConfig(filename='unixmen.log', level=logging.DEBUG)
+logging.info('INfo')
+logging.error('Error')
+logging.critical('Critical')
+logging.debug('Debug')
 print('imports fertig')
 
 '''
