@@ -107,6 +107,9 @@ trump = process_data(trump)
 corpus = {key:value for key,value in enumerate(list(set(trump)))}#take unique words from hp book and map it to an index, ordnet index ein wort zu
 corpus_reverse = {value:key for key,value in enumerate(list(set(trump)))}#ordnet wörtern einen index zu
 print('hinter corpus')
-input_target_list = get_input_target(trump)
+try:
+    input_target_list = get_input_target(trump)
+except e:
+    print('Error:', e)
 shuffle(input_target_list)
 print('ist fertig...')
