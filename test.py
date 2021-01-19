@@ -91,7 +91,7 @@ def get_input_target(data, amount_words = 15):
 
 #tweets = []#liste für alle tweets, enthält nur ein Dictionary
 #count = 0
-for line in open('NLP_Projekt/trump.json', 'r', encoding="utf8"):#einlesen jedes einzelnen tweets 
+for line in open('trump.json', 'r', encoding="utf8"):#einlesen jedes einzelnen tweets 
     tweets = json.loads(line)#umwandeln des json strings in ein dictionary und hinzufügen zu liste
 print('Anzahl Tweets: {}'.format(len(tweets)))
 
